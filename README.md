@@ -17,9 +17,11 @@ Kết quả
 app 1 về chim cảnh
 
 
+<img width="1123" height="808" alt="image" src="https://github.com/user-attachments/assets/c58a9bc7-2c9e-4325-8672-ad979ef38e70" />
 
+<img width="1110" height="800" alt="image" src="https://github.com/user-attachments/assets/29d1171b-767b-46e4-a489-98daeff6dee7" />
 
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cfef5223-50ce-4e5b-90ce-8362f88440c9" />
 
 
 
