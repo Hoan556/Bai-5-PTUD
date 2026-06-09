@@ -1052,22 +1052,31 @@ Click Projects → Start new project → đặt tên ví dụ Bài của Văn  H
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0eb82374-4350-4025-9e66-478ec95efd69" />
 
 
-## app2
+# APP2 (android studio): tạo app tương đương với Mit App inventor
+- Tạo Project mới trong Android Studio
+- File → New → New Project → Empty Views Activity
+
 
 <img width="1115" height="803" alt="image" src="https://github.com/user-attachments/assets/4759ce58-32f8-4e99-b073-9d2f881223ca" />
 
 Thêm dòng xin quyền Internet : <uses-permission android:name="android.permission.INTERNET" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/43b53999-3fd5-4a60-aa58-d59cf146c7d8" />
 
- - TẠO THÊM 2 MÀN HÌNH MỚI (Activity2 và Activity3)
+- Tạo thêm Activity 2 và Activity 3
++  Mặc định dự án mới chỉ có sẵn MainActivity (ta sẽ dùng làm Activity1). Nên phải tạo thêm 2 màn hình nữa:
+- cột thư mục bên trái (tab Project), tìm đường dẫn: app -> java -> com.example.app2mitinventor
+- Chuột phải vào thư mục tên package đó -> Chọn New -> Activity-> Empty Views Activity.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9a52a91f-dbfb-4e2d-a6e7-e84022a57137" />
-
++ Đặt tên là Activity2 -> Nhấn Finish.
 <img width="1119" height="797" alt="image" src="https://github.com/user-attachments/assets/240ab29c-ef09-4f7f-ac18-c981bb572fca" />
-
++ Tiếp tục làm lại thao tác trên: Chuột phải vào package -> New -> Activity -> Empty Views Activity-> Đặt tên là Activity3 -> Nhấn Finish.
 <img width="465" height="306" alt="image" src="https://github.com/user-attachments/assets/022b0054-78a6-4c8c-905f-3fb440968eb1" />
 
-- CODE GIAO DIỆN & XỬ LÝ CHO MÀN HÌNH CHÍNH activity_main.xml
+- Cấu hình Quyền Internet trong Manifest
+- Mở file app -> manifests -> AndroidManifest.xml.
+- Thêm dòng xin quyền Internet ngay trên thẻ .
+- Thêm thuộc tính android:usesCleartextTraffic="true" vào trong thẻ . Mục đích: Để app không bị hệ điều hành chặn khi gửi dữ liệu HTTP/HTTPS lên Server
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3b2f22ae-ce11-45a3-bed3-3f6e45beddbd" />
 
@@ -1083,9 +1092,13 @@ Thêm dòng xin quyền Internet : <uses-permission android:name="android.permis
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/03ffcee6-f76d-4480-a3e6-ee2dbf630c84" />
 
 - MÀN HÌNH 3 (MainActivity3 - Xem WebView)
+- Giao diện: Mở file res -> layout -> activity_activity3.xml. Thêm duy nhất một linh kiện chiếm toàn màn hình (match_parent).
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e66b08c3-2ad6-4b77-b9ba-c4d3abd167e9" />
-
+- Logic: Mở file Activity3.java.
+- Kích hoạt JavaScript (setJavaScriptEnabled(true)).
+- Tạo chuỗi URL động bằng cách nối mã sinh viên vào đuôi: "https://k58kmt.tdh.io.vn?masv=" + MA_SINH_VIEN.
+- Gọi lệnh loadUrl() để tải trang web ngay trong ứng dụng.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f195c08f-4eb9-43b0-bd4e-4d6a3fbbd733" />
 
